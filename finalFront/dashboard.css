@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, sans-serif;
+  background: url('background.jpg');
+  background-size: cover;
+}
+#calendar {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#external-events {
+position: absolute;
+left: 20px;
+top: 100px;
+width: 150px;
+padding: 0 10px;
+border: 1px solid #ccc;
+background: #eee;
+text-align: left;
+}
+
+#external-events h4 {
+font-size: 16px;
+margin-top: 0;
+padding-top: 1em;
+}
+
+#external-events .fc-event {
+margin: 3px 0;
+cursor: move;
+}
+
+#external-events p {
+margin: 1.5em 0;
+font-size: 11px;
+color: #666;
+}
+
+#external-events p input {
+margin: 0;
+vertical-align: middle;
+}
+
+#calendar-wrap {
+margin-left: 200px;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-size: 60px;
+  color: aqua;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.outlined-heading {
+-webkit-text-stroke: 2px black;
+}
+
+
+
+.btn {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 20px 20px;
+margin: 0 10px;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+text-decoration: none;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+
+.btn:hover {
+background-color: #3e8e41;
+}
+
+.container1 {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+
+
+.sayd {
+background: rgba(0,0,0,0.5);
+padding: 15px;
+border-radius: 15px;
+
+}
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(255, 255, 255);
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+.serts {
+display: flex;
+align-items: center;
+height: 3rem;
+justify-content: space-between;
+
+}
+
+#search-input {
+margin-top: 20px;
+align-self: center;
+}
+
+.cont11{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

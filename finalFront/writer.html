@@ -1,0 +1,120 @@
+<?php
+include_once("connection.php");
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AquaFlants - Create Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="writer.css">
+
+    <script>
+          function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+  </head>
+  <body>
+  <div class="parent">
+    <div class="navigation">
+    <div class="sayd">
+      <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="dashboard.php">Home</a>
+      <a href="#">Profile</a>
+      <a href="writer.php">For Writers</a>
+      <a href="index.html">Signout</a>
+      </div>
+  
+    <div class="serts">
+  
+      <div class="cont11">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; AQUAFLANTS</span>
+      </div>
+  
+      <div class="cont12">
+          <form id="sers" action="search.php" method="post">
+              <input type="search" id="search-input" name="search" list="search-suggestions" placeholder="Search..." size="100">
+              <datalist id="search-suggestions">
+              <option value="Angiosperms">
+              <option value="Ferns">
+              <option value="Succulents">
+              <option value="Epiphytes">
+              <option value="Houseplants">
+              </datalist>
+              <button type="submit">Search</button>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="content">
+    <div class="container">
+      <h1 class="title">Insert New Plant</h1>
+      <form action="insert.php" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <label for="Type of Plant">Type of Plant:</label>
+          <div class="selectWrapper">
+            
+          <select name="typeplant" id="nameplant" style="height: 40px; width: 360px;" class="selectBox">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="Angiosperms">Angiosperms </option>
+            <option value="Ferns">Ferns</option>
+            <option value="Succulents">Succulents</option>
+            <option value="Epiphytes">Epiphytes</option>
+            <option value="Houseplants">Houseplants</option>
+          </select>
+        </div>
+        <br><br>
+        <div class="form-group">
+          <label for="Type of Plant">Garden type of plant</label>
+          <div class="selectWrapper">
+
+        <select name="gardenSize" id="nameplant" style="height: 40px; width: 360px;" class="selectBox">
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="Large Sized Garden">Large Sized Garden </option>
+          <option value="Medium Sized Garden">Medium Sized Garden</option>
+          <option value="Small Sized Garden">Small Sized Garden</option>
+        </select>
+      </div>
+        </div>
+        <div class="form-group">
+          <label for="Name of Plant">Name of Plant:</label>
+          <input type="text" class="form-control" id="nameplant" name="nameplant" placeholder="Enter Name of Plant" required>
+        </div>
+        <div class="form-group">
+          <label for="Plant Description">Plant Description: </label>
+          <input type="text" class="form-control" id="soilpref" name="plantdes" placeholder="Enter Plant Description" required>
+        </div>
+        <div class="form-group">
+          <label for="Soil Preference">Soil Preference:</label>
+          <input type="text" class="form-control" id="soilpref" name="soilpref" placeholder="Enter Soil Preference" required>
+        </div>
+        <div class="form-group">
+          <label for="Sunlight Preference">Sunlight Preference:</label>
+          <input type="text" class="form-control" id="sunpref" name="sunpref" placeholder="Enter Sunlight Preference" required>
+        </div>
+        <div class="form-group">
+          <label for="Water Preference">Water Preference:</label>
+          <input type="text" class="form-control" id="waterpref" name="waterpref" placeholder="Enter Water Preference" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Insert an image: <span title="Maximum of 5Mb size, only jpeg and png format">&#9432</span></label>
+            <input type="file" id="image" name="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>    
+      </form>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>
